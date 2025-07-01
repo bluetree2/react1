@@ -12,7 +12,17 @@ function MyComp1({ color, children }) {
 function App11() {
   // 직접만든 컴포넌트 : 대문자로 시작
   // html 컴포넌트(built-in component, 브라우저 컴포넌트) : 소문자로 시작
-  // 브라우저 컴포넌트
+  // 브라우저 컴포넌트의 props : html attribute를 사용
+  // but, class -> className, for ->htmlFor
+
+  // style prop : style attribute 역할
+  // style attribute
+  // <div></div>;
+  /*
+   * style prop
+   * <div style{{color: "red", backgroundColor:"yellow",fontSize:"24px"}}>
+   < </div>
+   * */
   return (
     <>
       <MyComp1 color="red">작성된 컨텐츠</MyComp1>
@@ -30,7 +40,30 @@ function App11() {
       <input type="text" id={"nameInput"} />
       <hr />
       <div className={"content"}>hello</div>
+      <hr />
+      <div
+        style={{ color: "red", backgroundColor: "yellow", fontSize: "24px" }}
+      >
+        스타일 props 사용
+      </div>
+      <hr />
+      <button
+        style={{
+          color: "yellow",
+          backgroundColor: "coral",
+          padding: "10px",
+          borderRaius: "5px",
+          fontSize: "2em",
+        }}
+      >
+        내가 만든 멋진 버튼
+      </button>
+      {/*  연습 style props 를 사용해서 자신만의 버튼 만들어보기*/}
     </>
   );
 }
+
+const myAddress = "seoul";
+export {myAddress}
+
 export default App11;
