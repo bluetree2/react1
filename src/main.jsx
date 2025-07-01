@@ -18,9 +18,10 @@ import App13 from "./App13.jsx";
 import App14 from "./App14.jsx";
 import App15 from "./App15.jsx";
 import App16 from "./App16.jsx";
+import App17 from "./App17.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App16 />
+    <App17 />
   </StrictMode>,
 );
