@@ -58,9 +58,9 @@ function MyComp3() {
 
 
 
-  function handleButtonClick() {
-    setCount(count + 1);
-  }
+  // function handleButtonClick() {
+  //   setCount(count + 1);
+  // }
 
   return(
     <div>
