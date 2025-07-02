@@ -52,7 +52,7 @@ function MyComp3() {
   // const [length, setLength] = useState(0);
   
   // 연습 
-  // 불필요한 샅애 length를 제거하고 같은 일을 하도록 코드 변경
+  // 불필요한 샅태 length를 제거하고 같은 일을 하도록 코드 변경
 
   function handleInputChange(e) {
     setText(e.target.value);

@@ -31,9 +31,11 @@ import App26 from "./App26.jsx";
 import App27 from "./App27.jsx";
 import App28 from "./App28.jsx";
 import App29 from "./App29.jsx";
+import App30 from "./App30.jsx";
+import App31 from "./App31.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App29 />
+    <App31 />
   </StrictMode>,
 );
