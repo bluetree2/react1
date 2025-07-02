@@ -56,17 +56,16 @@ function MyComp3() {
   // uses
   // const [, set] = useState()
 
+  function handleButtonClick() {
+    setCount(count + 1);
+  }
 
-
-  // function handleButtonClick() {
-  //   setCount(count + 1);
-  // }
-
-  return(
+  return (
     <div>
-      <button></button>
+      {count} <br />
+      <button onClick={handleButtonClick}>세번째 버튼</button>
     </div>
-  )
+  );
 }
 
 function MyComp4() {
@@ -118,9 +117,57 @@ function MyComp6() {
   </div>
 }
 
+function MyComp7() {
+  const [index, setIndex] = useState(0)
+
+  function handleNextButtonClick(){
+    // index를 하나씩 옮기기 (바꾸기)
+    let nextIndesx = index + 1;
+    if (nextIndesx >= imgs.length){
+      nextIndesx = 0;
+    }
+    setIndex(nextIndesx)
+  }
+  // 다음 버튼 클릭시 독수리->벌->곰->독수리 로 출력되도록 코드 완성
+  const imgs = [
+    "/public/bear.jpg",
+    "/public/eagle.jpg",
+    "/public/bee.jpg"]
+
+  function handlePrevButtonClick() {
+    let nextIndex = index - 1;
+    if (nextIndex < 0) {
+      nextIndex = imgs.length - 1;
+    }
+    setIndex(nextIndex);
+  }
+
+  function handlePrevButtonClick2() {
+    setIndex( (index-1+imgs.length) % imgs.length)
+  }
+
+  function handleNextButtonClick2() {
+    setIndex( (index+1) % imgs.length)
+
+  }
+
+  return <div>
+    <img className="w-100" src={imgs[index]} alt=""/>
+    <br/>
+
+    <button onClick={handlePrevButtonClick2}>이전</button>
+    <button onClick={handleNextButtonClick2}>다음</button>
+    <button onClick={handlePrevButtonClick}>이전</button>
+    <button onClick={handleNextButtonClick}>다음</button>
+  </div>
+
+}
+
 function App23(props) {
   return (
     <div>
+      <MyComp7/>
+      <hr/>
       <MyComp6/>
       <hr/>
       <MyComp5/>
