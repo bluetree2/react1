@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function App31(props) {
+function MyComp1() {
   const [person, setPerson] = useState({
     name: "son",
     address: {
@@ -25,17 +25,32 @@ function App31(props) {
   return (
     <div>
       <div>
-        <input type="text" placeholder="이름" value={person.name}
-        onClick={handleNameChange}/>
-      </div>
-      <div>
-        <input type="text" placeholder="도시" value={person.address}
-        onClick={handleCityChange}/>
-      </div>
-      <div>
-        <input type="text" placeholder="국가" value={person.address}
+        <input
+          type="text"
+          placeholder="이름"
+          value={person.name}
+          onChange={handleNameChange}
         />
       </div>
+      <div>
+        <input
+          type="text"
+          placeholder="도시"
+          value={person.address.city}
+          onChange={handleCityChange}
+        />
+      </div>
+      <div>
+        <input type="text" placeholder="국가" value={person.address.country} />
+      </div>
+    </div>
+  );
+}
+
+function App31(props) {
+  return (
+    <div>
+      <MyComp1 />
     </div>
   );
 }
