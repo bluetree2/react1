@@ -30,9 +30,10 @@ import App25 from "./App25.jsx";
 import App26 from "./App26.jsx";
 import App27 from "./App27.jsx";
 import App28 from "./App28.jsx";
+import App29 from "./App29.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App28 />
+    <App29 />
   </StrictMode>,
 );
