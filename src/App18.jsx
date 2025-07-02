@@ -6,14 +6,55 @@ import {
     Navbar,
     Pagination,
     Spinner,
+    Form, FloatingLabel, Carousel
 } from "react-bootstrap";
 import { FcRight,FcLeft } from "react-icons/fc";
-import {shelljs} from "globals";
+// import {shelljs} from "globals";
 import {useState} from "react";
 function App18 (){
     const [show, setShow] = useState(false);
     return(
         <div>
+            <Carousel>
+                <Carousel.Item>
+                    <img className={"d-block w-100"} src={"/public/bee.jpg"} alt=""/>
+                    <Carousel.Caption>
+                        <h3>꿀벌</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className={"d-block w-100"} src={"/public/bear.jpg"} alt=""/>
+                    <Carousel.Caption>
+                        <h3>곰</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className={"d-block w-100"} src={"/public/eagle.jpg"} alt=""/>
+                    <Carousel.Caption>
+                        <h3>독수리</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+            <hr/>
+            <FloatingLabel label={"아이디를 입력해주세요."} controlId="idFloatingInput">
+                <Form.Control placeholder={"아이디를 입력해주세요."}/>
+            </FloatingLabel>
+            <FloatingLabel label={"패스워드를 입력해주세요."} controlId="pwFloatingInput">
+                <Form.Control placeholder={"패스워드를 입력해주세요."}/>
+            </FloatingLabel>
+            <hr/>
+            <Form.Group controlId={"idInput"}>
+                <Form.Label>아이디</Form.Label>
+                <Form.Control/>
+            </Form.Group>
+            <Form.Group>
+                <Form.Label>패스워드</Form.Label>
+                <Form.Control type={"password"}/>
+            </Form.Group>
+            <Form.Group>
+                <Form.Label>본문</Form.Label>
+                <Form.Control as={"textarea"}/>
+            </Form.Group>
             <Button onClick={()=>setShow(!show)}>
                모달 예제
             </Button>
