@@ -82,18 +82,18 @@ function MyComp5() {
 
   // 연습
 
-  function handleBearuttonClick() {
+  function handleBearButtonClick() {
     const nextlists = [...list];
     nextlists.push("곰");
     setList(nextlists);
   }
-  function handleEagleuttonClick() {
+  function handleEagleButtonClick() {
     // const nextList = [...list];
     // nextList.push("독수리");
     const nextList = [...list, "독수리"];
     setList(nextList);
   }
-  function handleBeeuttonClick() {
+  function handleBeeButtonClick() {
     setList([...list, "벌"]);
   }
 
@@ -101,9 +101,9 @@ function MyComp5() {
   // 각 버튼 클릭시 새 아이템 추가 디도록 코드 작성
   return (
     <div>
-      <button onClick={handleBearuttonClick}>곰 추가</button>
-      <button onClick={handleEagleuttonClick}>독수리 추가</button>
-      <button onClick={handleBeeuttonClick}>벌 추가</button>
+      <button onClick={handleBearButtonClick}>곰 추가</button>
+      <button onClick={handleEagleButtonClick}>독수리 추가</button>
+      <button onClick={handleBeeButtonClick}>벌 추가</button>
       <button onClick={() => setList([...list, "사자"])}>사자 추가</button>
       <button onClick={() => {
         const nextList = [...list];
