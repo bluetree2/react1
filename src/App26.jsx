@@ -21,7 +21,7 @@ function MyComp2(){
   // 연습
   // 각 인풋에 입력한 값으로 변경되도록 코드 작성
   const [text1, setText1] = useState("입력");
-  const [text2, setText2] = useState("입력");
+  // const [text2, setText2] = useState("입력");
   return (
     <div>
       <div>
@@ -29,7 +29,8 @@ function MyComp2(){
                onChange={(e) => setText1(e.target.value)}/>
       </div>
       <div>
-        <input type="text" value={text2}/>
+        <input type="text" value={text1}
+               onChange={(e) => setText1(e.target.value)}/>
       </div>
     </div>
   )
