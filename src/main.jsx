@@ -54,6 +54,6 @@ import App49 from "./App49.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App48 />
+    <App49 />
   </StrictMode>,
 );

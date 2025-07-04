@@ -1,7 +1,10 @@
 import React from 'react';
-import {BrowserRouter, Outlet, Route, Routes} from "react-router";
+import {BrowserRouter, Link, NavLink, Outlet, Route, Routes} from "react-router";
 
 // 연습
+// 연습 : 경로 이동 시 모든 컴포넌트가 다시 마운트 되지 않도록 코드 작성
+// 연습 : 현재 경로와 Link의 to prop이 같으면 그려지는 a요소에 active class추가하기
+
 // /react/install
 // /react/game
 // /react/state
@@ -15,9 +18,9 @@ function ReactLayout() {
             <h3 className="panel-title">사이드 바</h3>
           </div>
           <ul className="list-group">
-            <li className="list-group-item"><a href="/react/install">install</a></li>
-            <li className="list-group-item"><a href="/react/game">game</a></li>
-            <li className="list-group-item"><a href="/react/state">state</a></li>
+            <li className="list-group-item"><NavLink to="/react/install">install</NavLink></li>
+            <li className="list-group-item"><NavLink to="/react/game">game</NavLink></li>
+            <li className="list-group-item"><NavLink to="/react/state">state</NavLink></li>
           </ul>
         </div>
       </div>
