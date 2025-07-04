@@ -41,9 +41,12 @@ import App36 from "./App36.jsx";
 import App37 from "./App37.jsx";
 import App38 from "./App38.jsx";
 import App39 from "./App39.jsx";
+import App40 from "./App40.jsx";
+import App41 from "./App41.jsx";
+import App42 from "./App42.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App38 />
+    <App42 />
   </StrictMode>,
 );
