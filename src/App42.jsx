@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter} from "react-router";
+import {BrowserRouter, Routes, Route} from "react-router";
 
 // 연습 : react router 사용해서 아래 경로에 따른 컴포넌트 다르게 보이기
 // learn : <h3>react 배우기</h3?
@@ -35,10 +35,10 @@ function App42(props) {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="learn" element={<Lesren/>}>react 배우기</Route>
-          <Route path="tutorial" element={<Toturial/>}>react 공부하기</Route>
-          <Route path="install" element={<Install/>}>react 설치하기</Route>
-          <Route path="reference/react" element={}>react 참고 문서</Route>
+          <Route path="learn" element={<Lesren/>}/>
+          <Route path="tutorial" element={<Toturial/>}/>
+          <Route path="install" element={<Install/>}/>
+          <Route path="reference/react" element={<h3>react 참고 문서</h3>}/>
         </Routes>
       </BrowserRouter>
     </div>
