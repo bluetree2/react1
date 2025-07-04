@@ -35,9 +35,10 @@ function App42(props) {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="learn" element={<Lesren/>}></Route>
-          <Route path="tutorial" element={<Toturial/>}></Route>
-          <Route path="install" element={<Install/>}></Route>
+          <Route path="learn" element={<Lesren/>}>react 배우기</Route>
+          <Route path="tutorial" element={<Toturial/>}>react 공부하기</Route>
+          <Route path="install" element={<Install/>}>react 설치하기</Route>
+          <Route path="reference/react" element={}>react 참고 문서</Route>
         </Routes>
       </BrowserRouter>
     </div>
