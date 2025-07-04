@@ -49,9 +49,11 @@ import App44 from "./App44.jsx";
 import App45 from "./App45.jsx";
 import App46 from "./App46.jsx";
 import App47 from "./App47.jsx";
+import App48 from "./App48.jsx";
+import App49 from "./App49.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App47 />
+    <App48 />
   </StrictMode>,
 );

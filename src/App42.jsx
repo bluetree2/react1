@@ -5,7 +5,7 @@ import {BrowserRouter, Routes, Route} from "react-router";
 // learn : <h3>react 배우기</h3?
 // tutorial : <h3>react 공부하기</h3>
 // install : <h3>react 설치하기</h3>
-function Lesren() {
+function Learn() {
   return (
     <div>
       <h3>react 배우기</h3>
@@ -13,7 +13,7 @@ function Lesren() {
   )
 }
 
-function Toturial() {
+function Tutorial() {
   return (
     <div>
       <h3>react 공부하기</h3>
@@ -35,8 +35,8 @@ function App42(props) {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="learn" element={<Lesren/>}/>
-          <Route path="tutorial" element={<Toturial/>}/>
+          <Route path="learn" element={<Learn/>}/>
+          <Route path="tutorial" element={<Tutorial/>}/>
           <Route path="install" element={<Install/>}/>
           <Route path="reference/react" element={<h3>react 참고 문서</h3>}/>
         </Routes>
