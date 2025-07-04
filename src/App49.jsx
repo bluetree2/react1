@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Link, NavLink, Outlet, Route, Routes} from "react-router";
-
+import './assets/mtstyle.css';
 // 연습
 // 연습 : 경로 이동 시 모든 컴포넌트가 다시 마운트 되지 않도록 코드 작성
 // 연습 : 현재 경로와 Link의 to prop이 같으면 그려지는 a요소에 active class추가하기
